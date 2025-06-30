@@ -1,0 +1,155 @@
+.hero {
+    background: url(../imgs/wheat.jpg);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+}
+
+.glassmorphism {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(82, 175, 73, 0.1);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    padding: 60px 20px;
+}
+
+.content {
+    display: flex;
+    gap: 150px;
+    padding-left: 120px;
+    color: white;
+}
+
+.text1 h2 {
+    font-size: 69px;
+    color: white;
+}
+
+.text1 button {
+  color: black;
+  background-color: #FDF517;   
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 30px;
+  margin-top: 30px;
+}
+
+/*Second Third*/
+
+.body {
+    display: flex;
+    gap: 100px;
+    padding: 90px 160px;
+}
+
+.imag {
+    padding-top: 30px;
+}
+
+/*third section*/ 
+.footer {
+  background-color: #18263A;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer  h3{
+  color: white;
+  padding-top: 60px;
+  
+} 
+
+.Links h3 {
+  padding-bottom: 20px;
+}
+
+.footer ul  a{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.lastImg {
+  background-color: #18263A;
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+@media (max-width: 900px) {
+  /* HERO SECTION */
+  .hero {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .glassmorphism {
+    padding: 30px 10px;
+  }
+  .content {
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .text1 h2 {
+    font-size: 32px;
+  }
+  .text1 button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 0;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  /* SECOND SECTION */
+  .body {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 10px;
+  }
+  .imag {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .footer h3 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .footer ul a {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .lastImg {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

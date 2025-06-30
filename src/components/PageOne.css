@@ -1,0 +1,1025 @@
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.homepage {
+    background: url(../imgs/Group2.png) no-repeat;
+    background-position: top right;
+    background-size: 79%;
+    background-origin: content-box;
+    padding-bottom: 100px; /* space below image */
+    min-height: 110vh;
+    position: relative;
+    margin-bottom: 320px;
+    margin-right: 0;
+}
+
+
+/* General Navbar Styling */
+
+.navbar-header {
+  background-color: #f8f9fa; /* Light grey background, change as needed */
+  padding: 10px 20px;
+  border-bottom: 1px solid #e7e7e7; /* Optional: adds a subtle border */
+  position: relative; /* Needed for absolute positioning of mobile menu */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust as per your site's max width */
+  margin: 0 auto; /* Centers the container */
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+  width: auto;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 700px;
+    height: 61px;
+    margin-left: 360px;
+    margin-top: 40px;
+    background: #EBEBEBE5; /* semi-transparent white */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    list-style: none;
+    z-index: 2;
+    position: static ; /* Not fixed */
+     
+  
+   
+}
+
+nav ul li a{
+   padding: 8px 14px;
+   font-size: 15px;
+   font-weight: 700;
+   color: black;
+   text-decoration: none;
+   transition: background-color 0.3s ease;
+
+}
+
+.nav-link.active {
+  background-color: black;
+  padding: 15px 25px;
+  border-radius: 5px;
+  color: white;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: none; /* Hidden by default, shown on mobile */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10; /* Ensure it's above other content */
+    position: absolute;   /* Add this */
+  top: 20px;            /* Adjust as needed */
+  right: 20px;          /* Adjust as needed */
+   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black; /* Color of the hamburger lines */
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Menu Styling - Adjust breakpoint as needed (e.g., 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide desktop nav links */
+    position: absolute;
+    top: 100%; /* Position below the header */
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Same as header or different */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds a shadow */
+  }
+
+  .nav-links.mobile-menu-open {
+    display: flex; /* Show when mobile menu is open */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Spacing for mobile links */
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block; /* Make links take full width */
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hamburger-icon {
+    display: flex; /* Show hamburger icon */
+  }
+
+  /* Optional: Animation for hamburger icon when active */
+  .hamburger-icon.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-icon.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+}
+.hide-navbar-btn {
+  background: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  margin: 12px auto 0 auto;
+  display: block;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hide-navbar-btn:hover {
+  background: #d32f2f;
+}
+
+
+
+/*HERO SECTION*/
+
+
+.herosection {
+    padding:0px 40px;
+    margin-top: -60px;
+    
+}
+
+.herosection h1{
+  padding-top: 150px;
+  font-size: 88px;
+  font-weight: 800;
+  padding-left: 30px ;
+    
+}
+
+.herosection p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    padding-left: 30px;
+    margin-top: 40px;
+    
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    margin-left: 30px;
+}
+
+.btn1 button {
+  background-color: black;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 30px;
+
+
+}
+
+.btn2 button {
+  margin-left: 5px;
+  background-color: white;
+  font-size: 18px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 30px;
+
+}
+
+.btn3 button {
+  background-color: white;
+  font-size: 18px;
+  cursor: pointer;
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 30px;
+   margin-left: 800px;
+  
+}
+
+
+
+/*Second section css*/
+/*FERTILISERS*/
+
+
+
+.secondSection {
+     text-align: center;
+     margin-top: -300px;
+     background-color: #E6E6E6;
+     padding-top: 100px;
+     padding-bottom: 40px;
+}
+
+.secondSection h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.secondSection p {
+  font-size: 18px;
+  line-height: 100%;
+  padding-top: 30px;
+}
+
+.patners {
+    display: flex;
+    gap: 140px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Third section css*/
+.bigImage {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), 
+        url(../imgs/bkgrnd.png);
+    color: white;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+
+.texts {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  padding-left: 120px;
+  padding-top: 120px; 
+  color: white;
+  margin-left: 440px;
+  margin-right: auto;
+  width: max-content; 
+  position: relative;
+}
+
+.texts::before {
+  content: "";
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 120px;
+  left: 0;
+  top: 0;
+  width: 5px;
+  border-radius: 2px;
+  height: 60%;
+  background-color: #00FF75;
+}
+
+ /*remove green line*/
+@media (max-width: 767px) {
+  .texts::before {
+    display: none;
+  }
+}
+
+
+
+.texts h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.texts p {
+    font-size: 20px;
+}
+
+
+
+/*Fourth Section*/
+.us {
+  display: flex;
+  align-items: center; 
+  padding: 15px 240px; 
+  padding-top: 80px;
+  gap: 20px; 
+  position: relative; 
+  margin-bottom: 70px;
+          
+}
+
+.us::before {
+  content: "";
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 80px;
+  left: 0;
+  top: 0;
+  width: 5px;
+  border-radius: 2px;
+  height: 80%;
+  background-color: #00FF75;
+
+}
+
+/*remove green line*/
+@media (max-width: 767px) {
+  .us::before {
+    display: none;
+  }
+}
+
+.description {
+  flex: 1;            
+}
+
+.description h2 {
+  font-size: 50px;
+  margin-left: -90px;
+}
+
+.description p {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-left: -90px;
+}
+
+.description button{
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none; 
+    margin-left: -90px;
+}
+
+.imageFarmer img {
+  padding-top: 0px;
+  max-width: 400px;    
+  height: auto;
+}
+
+/*Fifth Section*/
+
+.green {
+    background-color: #32936F;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 230px;
+  padding: 1.5rem;
+  
+}
+
+.div1 .logo {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.div1 h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.bags {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  padding: 2rem 0 2rem 2rem; /* No right padding */
+  position: relative;
+}
+
+.bags p {
+  padding-top: 80px;
+  padding-left: 25px;
+}
+
+.bags button {
+  margin-top: 16rem;
+  margin-left: -934px;
+  display: block;
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #FDF517;
+  padding: 12px 30px;
+
+}
+
+.bags img {
+  margin-right: 0;
+  padding-right: 0;
+  display: block;
+  width: 700px;
+  height: auto;
+  object-fit: cover;
+}
+
+/*Sixth Section*/
+
+.sixth {
+  background-color: #32936F;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: 20px;
+  padding-left: 10px;
+
+}
+
+.frame {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-left: 60px;
+  margin-top: 40px;
+
+}
+
+.image-container{
+  background-image: url(./src/imgs/truck.jpg);
+  height: 50%;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.text-container {
+  margin-top: 30px;
+  height: 50%;
+  padding-left: 3px;
+}
+
+.text-container h3{
+ color: white;
+ text-align: left;
+ align-items: left;
+  margin-top: 20px;
+}
+
+.text-container p{
+  font-size: 12px;
+  margin-top: 20px;
+  color: white;
+}
+
+.text-container button{
+  color: black;
+  border: none;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #FDF517;
+  padding: 12px 30px;
+  
+}
+
+/*Seventh section*/
+.seven {
+  background-image: url(./src/imgs/tractor.jpg);
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  
+}
+
+.withForm {
+  color: white;
+  padding: 120px 80px;
+  margin-left: -200px;
+}
+
+.withForm h2 {
+  font-size: 60px;
+}
+
+.foRm {
+  background-color: white;
+  width: 450px;
+}
+
+form input,form textarea{
+    width: 90%;
+    border: 2px solid #262626;
+    display: flex;
+    outline: none;
+    background:#ffff ;
+    padding: 15px;
+    margin: 25px 22px;
+    color: #fff;
+    font-size: 18px;
+
+}
+form .btn2{
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 22px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: black;
+  padding: 12px 30px;
+
+}
+
+/*eighth section*/ 
+.footer {
+  background-color: #18263A;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.footer  h3{
+  color: white;
+  padding-top: 60px;
+  
+} 
+
+.Links h3 {
+  padding-bottom: 20px;
+}
+
+.footer ul  a{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.lastImg {
+  background-color: #18263A;
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
+
+/* Mobile nav menu toggle */
+@media (max-width: 900px) {
+  /* NAVIGATION */
+    nav ul {
+    width: 90%;
+    min-width: 0;
+    margin-left: 5%;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    gap: 10px;
+    height: auto;
+    border-radius: 8px;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+    font-weight: 700;
+  }
+  .nav-link:active {
+    width: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+  }
+
+   .homepage {
+    background-size: 460px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    min-height: 30px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .glassmorphism {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .News {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
+  h1, h2, h3, p, section {
+    margin-top: 60px;
+  }
+
+  .secondSection {
+    margin-top: 20px;
+  }
+
+  .glassmorphism {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .News {
+    padding-top: 20px;
+  }
+
+  .News h2 {
+    margin-top: 0;
+  }
+
+  /* HERO SECTION */
+  .herosection {
+    padding: 0 10px;
+    margin-top: 0;
+  }
+  .herosection h1 {
+    font-size: clamp(28px, 8vw, 38px); /* Adjusts for smaller screens */
+    padding-left: 0;
+    padding-top: 90px;
+  }
+  .herosection p {
+    font-size: 15px;
+    padding-left: 0;
+  }
+  .buttons {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  /* .btn3 button {
+    margin-left: 0;
+    margin-top: 10px;
+  } */
+.btn3 button {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;                   /* makes it a perfect circle */
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn3 button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+
+
+  /* SECOND SECTION */
+  .secondSection h2 {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .secondSection p {
+    font-size: 15px;
+  }
+
+ .patners {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  .bigImage {
+  height: auto; /* allow content to define height */
+  padding: 40px 20px;
+  text-align: left;
+}
+
+ .mobile-break {
+    display: none;
+  }
+
+.texts {
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+}
+
+.texts br {
+  display: none;
+}
+
+.texts::before {
+  display: none;
+}
+
+.texts h2 {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.texts p {
+  font-size: 16px;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+  /* US SECTION */
+  .us {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+
+.us::before {
+    display: none;
+  }
+
+  .description h2{
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .description p {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+.description button {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+  .imageFarmer img {
+    max-width: 90vw;
+    margin-top: 40px;
+  }
+  /* DIV1 SECTION */
+  .div1 {
+  display: flex;             /* make it flex container */
+  flex-direction: row;       /* align children horizontally */
+  align-items: flex-start;   /* align items at the top */
+  gap: 20px;
+  padding: 1rem;
+  position: relative;        /* to allow absolute positioning if needed */
+}
+
+.div1 img {
+  width: 100px;               /* smaller size, adjust as needed */
+  height: auto;
+  object-fit: contain;
+  order: 0;                  /* ensure it’s first */
+}
+
+.div1 h1 {
+  font-size: clamp(28px, 8vw, 30px);
+  margin-top: 70px;
+  margin-left: -90px;
+  order: 1; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;    /* prevent line breaks */
+  overflow: hidden;  
+  text-overflow: ellipsis;                 
+}
+
+  /* BAGS */
+  .bags {
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem 0;
+  }
+
+  .bags br {
+    display: none;
+  }
+ 
+  .bags p {
+  margin-top: -20px;               /* smaller top offset, adjust as needed */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;                 /* equal spacing on both sides */
+  max-width: 90%;                  /* prevents going full-width */
+  text-align: left;             /* optional: center the text inside */
+  white-space: normal;            /* allow wrapping */
+  word-wrap: break-word;          /* prevent overflow */
+}
+
+  .bags img {
+  width: 90vw;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 10px;
+}
+
+  .bags button {
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+
+  /* SIXTH SECTION */
+  .sixth {
+    grid-template-columns: 1fr;
+    padding: 10px 0;
+    gap: 20px;
+  }
+  .frame {
+    width: 90vw;
+    align-items: center;
+    margin-left: 17px;
+    height: 500px;
+  }
+
+
+  /* SEVEN SECTION */
+  .seven {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    padding: 20px 0;
+  }
+  .withForm {
+    padding: 20px 10px;
+    margin-left: 0;
+  }
+  .withForm h2 {
+    font-size: clamp(24px, 7vw, 32px);
+  }
+  .foRm {
+    width: 95vw;
+    min-width: 0;
+  }
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  .lastImg {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/* EXTRA SMALL DEVICES (iPhone 14 Pro Max and similar) */
+@media (max-width: 430px) {
+  nav ul li a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .nav-link.active {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .herosection h1 {
+    font-size: 28px;
+    padding-top: 80px;
+  }
+  .herosection p {
+    font-size: 14px;
+  }
+  .secondSection h2 {
+    font-size: 24px;
+  }
+  .secondSection p {
+    font-size: 14px;
+  }
+  .patners {
+    gap: 15px;
+  }
+  .div1 h1 {
+    font-size: 28px;
+  }
+  .withForm h2 {
+    font-size: 24px;
+  }
+  .footer h3 {
+    font-size: 16px;
+    padding-top: 15px;
+  }
+  .footer ul a {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
