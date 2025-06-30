@@ -5,6 +5,10 @@ import seedco2 from '../imgs/seedco2.png';
 import sTr from '../imgs/sTr.png';
 import national from '../imgs/national.png';
 import fsg2 from '../imgs/fsg2.png';
+import Farmer from '../imgs/Farmer.jpg';
+import Slogo from '../imgs/Slogo.png';
+import copy from '../imgs/copy.png';
+import bag from '../imgs/bag.png';
 
 
 const PageOne = () => {
@@ -141,7 +145,8 @@ const PageOne = () => {
 
         </div>
         <div className="imageFarmer">
-          <img src="./src/imgs/Farmer.jpg" alt="Farmers" />
+          <img src={Farmer} alt="" width={400} />
+
         </div>
       </div>
 
@@ -149,7 +154,8 @@ const PageOne = () => {
         <div className="green">
           <div className="div1">
             <h1>SuperFert Products.</h1>
-            <img src="./src/imgs/Slogo.png" alt="" width={200}/>
+            <img src={Slogo} alt="" width={200} />
+
           </div>
            <div className="bags">
             <p>
@@ -157,7 +163,8 @@ const PageOne = () => {
              exercitationem dolores corporis eaque <br /> asperiores quibusdam. Consectetur eveniet dolores <br />earum aspernatur magni accusantium, sunt <br />itaque similique blanditiis, unde.
             </p>
              <button> More Info</button>
-             <img src="./src/imgs/copy.png" alt="" width={800}/>
+            <img src={copy} alt="" width={800} />
+
           </div>
         </div>
 
@@ -167,7 +174,8 @@ const PageOne = () => {
     <div className="sixth">
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
+
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -178,7 +186,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -189,7 +197,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -200,7 +208,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -211,7 +219,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -222,7 +230,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src="./src/imgs/bag.png" alt="bag" width={80} />
+              <img src={bag} alt="" width={80} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
