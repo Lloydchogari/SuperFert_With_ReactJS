@@ -522,6 +522,7 @@ nav ul li {
 
 .image-container{
   background-image: url(./truck.jpg);
+  background-size: cover;
   height: 50%;
   overflow: hidden;
   object-fit: contain;

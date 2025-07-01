@@ -21,7 +21,8 @@ const PageOne = () => {
         <header>
           <div id="Home">
             <div className="logo">
-              <img src="./src/imgs/Slogo.png" alt="logo" width={186} />
+              <img src={Slogo} alt="" width={186} />
+
             </div>
             <button
               className={`hamburger-icon${menuOpen ? " open" : ""}`}
