@@ -175,7 +175,7 @@ const PageOne = () => {
     <div className="sixth">
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
 
             </div>
                 <div className="text-container">
@@ -187,7 +187,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -198,7 +198,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -209,7 +209,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -220,7 +220,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>
@@ -231,7 +231,7 @@ const PageOne = () => {
 
         <div className="frame">
             <div className="image-container">
-              <img src={bag} alt="" width={80} />
+              <img src={bag} alt="" width={60} />
             </div>
                 <div className="text-container">
                   <h3>Tobacco Fertilizer</h3>

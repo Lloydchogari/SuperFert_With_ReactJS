@@ -520,21 +520,27 @@ nav ul li {
 
 }
 
-.image-container{
+.image-container {
   background-image: url(/truck.jpg);
   background-size: cover;
-  height: 50%;
-  overflow: hidden;
-  object-fit: contain;
+  height: 40%;
+  position: relative; 
 }
 
 .image-container img {
-  width: 100%;
+  position: absolute;
+  top: 90px; /* Adjust this to lift the image above the container */
+  left: 80%;
+  transform: translateX(-50%);
+  width: auto;
+  height: auto;
   object-fit: contain;
+  z-index: 2;
 }
 
+
 .text-container {
-  margin-top: 30px;
+  margin-top: 50px;
   height: 50%;
   padding-left: 3px;
 }
