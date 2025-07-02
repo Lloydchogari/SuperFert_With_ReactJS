@@ -118,11 +118,11 @@ const PageOne = () => {
         <h2>Fertilisers. Seed. Grain.</h2>
         <p>SuperFet Fertilizeris powered by the FSG Company and is a proud patner of </p>
             <div className="patners">
-                <img src={seedco2} alt="" />
-                <img src={sTr} alt="" width={100} />
-                <img src={national} alt="" width={100} />
-                <img src={fsg2} alt="" width={100} />
-                <img src={seedco2} alt="" width={100} />
+                <img src={seedco2} alt="" width={130}/>
+                <img src={sTr} alt="" width={130} />
+                <img src={national} alt="" width={140} />
+                <img src={fsg2} alt="" width={130} />
+                <img src={seedco2} alt="" width={130} />
             </div>
       </div>
 
