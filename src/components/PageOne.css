@@ -51,32 +51,64 @@ nav {
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
-    padding: 20px;
-    border-radius: 8px;
-    width: 700px;
-    height: 61px;
-    margin-left: 360px;
-    margin-top: 40px;
-    background: #EBEBEBE5; /* semi-transparent white */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
-    list-style: none;
-    z-index: 2;
-    position: static ; /* Not fixed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 700px;
+  height: 61px;
+  margin-left: 360px;
+  margin-top: 40px;
+  background: #EBEBEBE5; /* semi-transparent white */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  list-style: none;
+  z-index: 2;
+  position: static; /* Not fixed */
 }
 
-nav ul li a{
-   padding: 8px 14px;
-   font-size: 15px;
-   font-weight: 700;
-   color: black;
-   text-decoration: none;
-   transition: background-color 0.3s ease;
+nav ul li {
+  display: inline-block;
+}
 
+/* ✅ Updated nav-link styling */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* ✅ Pink underline animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+
+/* ✅ Hover and Active Underline */
+.nav-link:hover::after
+ {
+  width: 100%;
+  
+}
+
+.nav-link:hover::after{
+  background-color: #000000;
+}
+
+.nav-link:hover {
+  color: rgb(138, 137, 137);
 }
 
 .nav-link.active {
@@ -86,13 +118,6 @@ nav ul li a{
   color: white;
 }
 
-.nav-link:hover {
-  color: rgb(138, 137, 137);
-}
-
-nav ul li {
-  display: inline-block;
-}
 
 
 /* Hamburger Icon Styling */
@@ -246,8 +271,16 @@ nav ul li {
   font-size: 15px;
   font-weight: 600;
   padding: 12px 30px;
+  border-radius: 3px;
 
 
+}
+
+.btn1 button:hover{
+    color: black;
+     background-color: #f0f0f0;
+    border: 2px solid #000000;
+    border-radius: 3px;
 }
 
 .btn2 button {
@@ -261,6 +294,13 @@ nav ul li {
   font-weight: 600;
   padding: 12px 30px;
 
+}
+
+.btn2 button:hover{
+    color: black;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    border-radius: 3px;
 }
 
 .btn3 button {
@@ -436,8 +476,18 @@ nav ul li {
     background-color: black;
     margin-top: 20px;
     padding: 12px 30px;
-    border: none; 
+    border: none;
+    border-radius: 3px; 
     margin-left: -90px;
+}
+
+.description button:hover{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+     background-color: #f0f0f0;
+    border: 2px solid #000000;
+    border-radius: 3px;
 }
 
 .imageFarmer img {
@@ -493,11 +543,18 @@ nav ul li {
   display: block;
   color: black;
   border: none;
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 600;
   background-color: #FDF517;
   padding: 12px 30px;
 
+}
+
+.bags button:hover{
+    color: black;
+     background-color: #f0f0f0;
+    border-radius: 3px;
 }
 
 .bags img {
@@ -574,6 +631,7 @@ nav ul li {
 .text-container button{
   color: black;
   border: none;
+  border-radius: 3px;
   margin-top: 30px;
   font-size: 15px;
   font-weight: 600;
@@ -582,9 +640,17 @@ nav ul li {
   
 }
 
+.text-container button:hover{
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
 /*Seventh section*/
 .seven {
-  background-image: url(/tractor.jpg);
+  background: url(/tractor.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
   width: 100%;
   height: 80vh;
   display: flex;
@@ -628,11 +694,19 @@ form .btn2{
   cursor: pointer;
   color: white;
   border: none;
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 600;
   background-color: black;
   padding: 12px 30px;
 
+}
+
+form .btn2:hover{
+    color: black;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    border-radius: 3px;
 }
 
 /*eighth section*/ 
@@ -661,6 +735,11 @@ form .btn2{
   list-style: none;
   text-decoration: none;
   margin-top: 15px;
+}
+
+.footer ul a:hover{
+  color: #FDF517;   
+    
 }
 
 .lastImg {

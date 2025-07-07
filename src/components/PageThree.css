@@ -37,10 +37,17 @@
   margin-left: 10px;
   cursor: pointer;
   border: none;
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 600;
   padding: 12px 30px;
   margin-top: 30px;
+}
+
+.text1 button:hover{
+    color: black;
+    background-color: #f0f0f0;
+    border-radius: 3px;
 }
 
 /*Second Third*/

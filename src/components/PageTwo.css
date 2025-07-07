@@ -76,6 +76,13 @@ nav ul li a{
   padding: 12px 30px;
 }
 
+.text-container button:hover{
+  color: black;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+
 .text2 {
     padding-top: 30px;
 }
